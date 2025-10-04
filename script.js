@@ -221,15 +221,16 @@ function handleNavbarScroll() {
 window.addEventListener('scroll', handleNavbarScroll);
 
 // Typing effect for hero title
-function typeWriter(element, text, speed = 100) {
+function typeWriter(element, text, speed = 100, callback) {
     let i = 0;
-    element.innerHTML = '';
     
     function type() {
         if (i < text.length) {
             element.innerHTML += text.charAt(i);
             i++;
             setTimeout(type, speed);
+        } else if (callback) {
+            callback();
         }
     }
     
@@ -240,9 +241,17 @@ function typeWriter(element, text, speed = 100) {
 document.addEventListener('DOMContentLoaded', function() {
     const heroTitle = document.querySelector('.hero-title');
     if (heroTitle) {
-        const originalText = heroTitle.innerHTML;
+        const text1 = 'Private. Secure. ';
+        const text2 = 'Untraceable.';
+
         setTimeout(() => {
-            typeWriter(heroTitle, originalText, 50);
+            heroTitle.innerHTML = ''; // Clear existing content
+            typeWriter(heroTitle, text1, 50, () => {
+                const span = document.createElement('span');
+                span.className = 'gradient-text';
+                heroTitle.appendChild(span);
+                typeWriter(span, text2, 50);
+            });
         }, 500);
     }
 });
