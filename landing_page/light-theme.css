@@ -1,5 +1,5 @@
 /* General Body Styles */
-body {
+.light-theme body {
     background-color: #ffffff !important;
     color: #000000 !important;
     font-family: 'Inter', sans-serif;
@@ -9,51 +9,51 @@ body {
 }
 
 /* All text elements */
-h1, h2, h3, h4, h5, h6, p, a, li, span, div {
+.light-theme h1, .light-theme h2, .light-theme h3, .light-theme h4, .light-theme h5, .light-theme h6, .light-theme p, .light-theme a, .light-theme li, .light-theme span, .light-theme div {
     color: #000000 !important;
 }
 
 /* Links */
-a {
+.light-theme a {
     text-decoration: none;
     color: #000000 !important;
     font-weight: bold;
 }
 
-a:hover {
+.light-theme a:hover {
     text-decoration: underline !important;
 }
 
 /* Navigation */
-.navbar {
+.light-theme .navbar {
     background: #ffffff !important;
     border-bottom: 2px solid #000000 !important;
 }
 
-.nav-logo a, .nav-links a {
+.light-theme .nav-logo a, .light-theme .nav-links a {
     color: #000000 !important;
 }
 
 /* Page Headers */
-.page-header {
+.light-theme .page-header {
     background: #ffffff !important;
     border-bottom: 2px solid #000000 !important;
     padding: 2rem 1rem;
 }
 
 /* Product Cards */
-.product-card {
+.light-theme .product-card {
     background: #ffffff !important;
     border: 2px solid #000000 !important;
     padding: 1.5rem;
 }
 
-.product-card:hover {
+.light-theme .product-card:hover {
     transform: translateY(-5px);
     box-shadow: 8px 8px 0 #000000 !important;
 }
 
-.product-brand {
+.light-theme .product-brand {
     background: #000000 !important;
     color: #ffffff !important;
     padding: 0.3rem 0.8rem;
@@ -62,17 +62,17 @@ a:hover {
     display: inline-block;
 }
 
-.product-image {
+.light-theme .product-image {
     border: 2px solid #000000 !important;
     background: #f5f5f5;
 }
 
-.product-price {
+.light-theme .product-price {
     font-weight: bold;
 }
 
 /* Buttons */
-.btn-order, .btn-view {
+.light-theme .btn-order, .light-theme .btn-view {
     background: #000000 !important;
     color: #ffffff !important;
     padding: 1rem 2rem;
@@ -88,12 +88,12 @@ a:hover {
     display: block;
 }
 
-.btn-order:hover, .btn-view:hover {
+.light-theme .btn-order:hover, .light-theme .btn-view:hover {
     background: #333333 !important;
 }
 
 /* Footer */
-.footer {
+.light-theme .footer {
     background: #ffffff !important;
     color: #000000 !important;
     border-top: 2px solid #000000 !important;
@@ -103,7 +103,7 @@ a:hover {
 }
 
 /* Remove gradients and shadows */
-.gradient-text, .typing-text .letter {
+.light-theme .gradient-text, .light-theme .typing-text .letter {
     background: none !important;
     -webkit-background-clip: unset !important;
     -webkit-text-fill-color: unset !important;
@@ -113,184 +113,184 @@ a:hover {
 }
 
 /* Remove colored icons */
-.service-icon i, .category-title i, .footer-logo i {
+.light-theme .service-icon i, .light-theme .category-title i, .light-theme .footer-logo i {
     color: #000000 !important;
 }
 
-.service-icon {
+.light-theme .service-icon {
     background: #ffffff !important;
     border: 1px solid #000;
 }
 
 /* Override dark theme backgrounds */
-.hero,
-.features,
-.pricing,
-.download,
-.coming-soon,
-.footer,
-.services-hero,
-.services-content,
-.services-cta {
+.light-theme .hero,
+.light-theme .features,
+.light-theme .pricing,
+.light-theme .download,
+.light-theme .coming-soon,
+.light-theme .footer,
+.light-theme .services-hero,
+.light-theme .services-content,
+.light-theme .services-cta {
     background: #ffffff !important;
     background-image: none !important;
 }
 
 /* Override dark cards */
-.feature-card,
-.pricing-card,
-.download-card,
-.coming-soon-card,
-.modal-content,
-.service-card {
+.light-theme .feature-card,
+.light-theme .pricing-card,
+.light-theme .download-card,
+.light-theme .coming-soon-card,
+.light-theme .modal-content,
+.light-theme .service-card {
     background: #ffffff !important;
     border: 2px solid #000000 !important;
     box-shadow: none !important;
 }
 
-.feature-card:hover,
-.pricing-card:hover,
-.download-card:hover,
-.coming-soon-card:hover,
-.service-card:hover {
+.light-theme .feature-card:hover,
+.light-theme .pricing-card:hover,
+.light-theme .download-card:hover,
+.light-theme .coming-soon-card:hover,
+.light-theme .service-card:hover {
     transform: translateY(-5px);
     box-shadow: 8px 8px 0 #000000 !important;
 }
 
 
 /* Override specific text colors that might be missed */
-.hero-description,
-.section-description,
-.stat-label,
-.feature-card p,
-.pricing-features li,
-.download-card p,
-.coming-soon-card p,
-.footer-section p,
-.footer-section ul li a,
-.footer-bottom,
-.period,
-.page-description,
-.service-features li,
-.price-label {
+.light-theme .hero-description,
+.light-theme .section-description,
+.light-theme .stat-label,
+.light-theme .feature-card p,
+.light-theme .pricing-features li,
+.light-theme .download-card p,
+.light-theme .coming-soon-card p,
+.light-theme .footer-section p,
+.light-theme .footer-section ul li a,
+.light-theme .footer-bottom,
+.light-theme .period,
+.light-theme .page-description,
+.light-theme .service-features li,
+.light-theme .price-label {
     color: #000000 !important;
 }
 
 /* Override button styles */
-.btn-primary {
+.light-theme .btn-primary {
     background: #000000 !important;
     color: #ffffff !important;
     border: 2px solid #000000 !important;
 }
 
-.btn-primary:hover {
+.light-theme .btn-primary:hover {
     background: #333333 !important;
     box-shadow: none !important;
     color: #ffffff !important;
 }
 
-.btn-secondary {
+.light-theme .btn-secondary {
     background: #ffffff !important;
     color: #000000 !important;
     border: 2px solid #000000 !important;
 }
 
-.btn-secondary:hover {
+.light-theme .btn-secondary:hover {
     background: #f0f0f0 !important;
     color: #000000 !important;
     box-shadow: none !important;
 }
 
 /* Override nav and other elements */
-.navbar {
+.light-theme .navbar {
     background: rgba(255, 255, 255, 0.95) !important;
     backdrop-filter: blur(10px) !important;
     border-bottom: 2px solid #000000 !important;
 }
 
-.nav-link, .nav-logo span, .nav-logo i, .nav-menu .active {
+.light-theme .nav-link, .light-theme .nav-logo span, .light-theme .nav-logo i, .light-theme .nav-menu .active {
     color: #000000 !important;
     text-shadow: none !important;
 }
 
-.hamburger span {
+.light-theme .hamburger span {
     background: #000000 !important;
 }
 
-.progress-bar {
+.light-theme .progress-bar {
     background: #cccccc !important;
 }
 
-.progress {
+.light-theme .progress {
     background: #000000 !important;
 }
 
-.social-links a {
+.light-theme .social-links a {
     background: #ffffff !important;
     color: #000000 !important;
     border: 2px solid #000000;
 }
 
-.social-links a:hover {
+.light-theme .social-links a:hover {
     background: #000000 !important;
     color: #ffffff !important;
 }
 
-.form-group input {
+.light-theme .form-group input {
     background: #ffffff !important;
     color: #000000 !important;
     border: 1px solid #000000 !important;
 }
 
-.form-group input:focus {
+.light-theme .form-group input:focus {
     border-color: #000000 !important;
     box-shadow: none !important;
 }
 
-.close {
+.light-theme .close {
     color: #000000 !important;
 }
 
-.pricing-card.featured {
+.light-theme .pricing-card.featured {
     transform: scale(1.0) !important;
     border: 2px solid #000 !important;
 }
 
 /* Fix for invisible text in the "Free" section */
-.free-features-grid .category-features li {
+.light-theme .free-features-grid .category-features li {
     color: #000000 !important;
 }
 
-.free-features-grid .category-header h4 {
+.light-theme .free-features-grid .category-header h4 {
     color: #000000 !important;
 }
 
-.free-features-banner .free-headline {
+.light-theme .free-features-banner .free-headline {
     color: #000000 !important;
 }
 
-.free-cta .cta-text {
+.light-theme .free-cta .cta-text {
     color: #000000 !important;
 }
 
 /* Fix for invisible text on the "Services" page */
-.service-card p,
-.service-card h4,
-.service-price .price-amount,
-.service-price .price-label,
-.page-title,
-.page-description,
-.category-title h3,
-.services-cta h2,
-.services-cta p {
+.light-theme .service-card p,
+.light-theme .service-card h4,
+.light-theme .service-price .price-amount,
+.light-theme .service-price .price-label,
+.light-theme .page-title,
+.light-theme .page-description,
+.light-theme .category-title h3,
+.light-theme .services-cta h2,
+.light-theme .services-cta p {
     color: #000000 !important;
 }
 
-.service-features li {
+.light-theme .service-features li {
     color: #000000 !important;
 }
 
-.category-header i,
-.category-features i {
+.light-theme .category-header i,
+.light-theme .category-features i {
     color: #000000 !important;
 }

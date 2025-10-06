@@ -541,6 +541,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+let globeMaterial; // Make material accessible globally
+
 // 3D Globe
 document.addEventListener('DOMContentLoaded', function() {
     const canvas = document.getElementById('globe-canvas');
@@ -551,7 +553,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Camera
     const camera = new THREE.PerspectiveCamera(75, canvas.clientWidth / canvas.clientHeight, 0.1, 1000);
-    camera.position.z = 1.4;
+    camera.position.z = 1.2;
 
     // Renderer
     const renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true, alpha: true });
@@ -560,11 +562,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Globe
     const geometry = new THREE.SphereGeometry(1, 32, 32);
-    const material = new THREE.MeshBasicMaterial({
-        color: 0x000000,
+    globeMaterial = new THREE.MeshBasicMaterial({
+        color: 0xffffff, // Default to white for dark theme
         wireframe: true
     });
-    const globe = new THREE.Mesh(geometry, material);
+    const globe = new THREE.Mesh(geometry, globeMaterial);
     scene.add(globe);
 
     // Animation
@@ -585,3 +587,9 @@ document.addEventListener('DOMContentLoaded', function() {
         camera.updateProjectionMatrix();
     });
 });
+
+window.updateGlobeColor = function(color) {
+    if (globeMaterial) {
+        globeMaterial.color.set(color);
+    }
+}
