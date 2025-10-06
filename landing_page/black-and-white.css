@@ -121,3 +121,137 @@ a:hover {
     background: #ffffff !important;
     border: 1px solid #000;
 }
+
+/* Override dark theme backgrounds */
+.hero,
+.features,
+.pricing,
+.download,
+.coming-soon,
+.footer,
+.services-hero,
+.services-content,
+.services-cta {
+    background: #ffffff !important;
+    background-image: none !important;
+}
+
+/* Override dark cards */
+.feature-card,
+.pricing-card,
+.download-card,
+.coming-soon-card,
+.modal-content,
+.service-card {
+    background: #ffffff !important;
+    border: 2px solid #000000 !important;
+    box-shadow: none !important;
+}
+
+.feature-card:hover,
+.pricing-card:hover,
+.download-card:hover,
+.coming-soon-card:hover,
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 8px 8px 0 #000000 !important;
+}
+
+
+/* Override specific text colors that might be missed */
+.hero-description,
+.section-description,
+.stat-label,
+.feature-card p,
+.pricing-features li,
+.download-card p,
+.coming-soon-card p,
+.footer-section p,
+.footer-section ul li a,
+.footer-bottom,
+.period,
+.page-description,
+.service-features li,
+.price-label {
+    color: #000000 !important;
+}
+
+/* Override button styles */
+.btn-primary {
+    background: #000000 !important;
+    color: #ffffff !important;
+    border: 2px solid #000000 !important;
+}
+
+.btn-primary:hover {
+    background: #333333 !important;
+    box-shadow: none !important;
+    color: #ffffff !important;
+}
+
+.btn-secondary {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border: 2px solid #000000 !important;
+}
+
+.btn-secondary:hover {
+    background: #f0f0f0 !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+}
+
+/* Override nav and other elements */
+.navbar {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px) !important;
+    border-bottom: 2px solid #000000 !important;
+}
+
+.nav-link, .nav-logo span, .nav-logo i, .nav-menu .active {
+    color: #000000 !important;
+    text-shadow: none !important;
+}
+
+.hamburger span {
+    background: #000000 !important;
+}
+
+.progress-bar {
+    background: #cccccc !important;
+}
+
+.progress {
+    background: #000000 !important;
+}
+
+.social-links a {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border: 2px solid #000000;
+}
+
+.social-links a:hover {
+    background: #000000 !important;
+    color: #ffffff !important;
+}
+
+.form-group input {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #000000 !important;
+}
+
+.form-group input:focus {
+    border-color: #000000 !important;
+    box-shadow: none !important;
+}
+
+.close {
+    color: #000000 !important;
+}
+
+.pricing-card.featured {
+    transform: scale(1.0) !important;
+    border: 2px solid #000 !important;
+}

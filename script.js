@@ -558,22 +558,11 @@ document.addEventListener('DOMContentLoaded', function() {
     renderer.setSize(canvas.clientWidth, canvas.clientHeight);
     renderer.setClearColor(0x000000, 0);
 
-    // Lighting
-    const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
-    scene.add(ambientLight);
-
-    const pointLight = new THREE.PointLight(0xffffff, 0.8);
-    pointLight.position.set(5, 5, 5);
-    scene.add(pointLight);
-
     // Globe
-    const textureLoader = new THREE.TextureLoader();
-    const texture = textureLoader.load('earth_texture.jpg');
-    const geometry = new THREE.SphereGeometry(1, 64, 64);
-    const material = new THREE.MeshStandardMaterial({
-        map: texture,
-        metalness: 0.3,
-        roughness: 0.7
+    const geometry = new THREE.SphereGeometry(1, 32, 32);
+    const material = new THREE.MeshBasicMaterial({
+        color: 0xffffff,
+        wireframe: true
     });
     const globe = new THREE.Mesh(geometry, material);
     scene.add(globe);
