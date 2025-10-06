@@ -255,3 +255,42 @@ a:hover {
     transform: scale(1.0) !important;
     border: 2px solid #000 !important;
 }
+
+/* Fix for invisible text in the "Free" section */
+.free-features-grid .category-features li {
+    color: #000000 !important;
+}
+
+.free-features-grid .category-header h4 {
+    color: #000000 !important;
+}
+
+.free-features-banner .free-headline {
+    color: #000000 !important;
+}
+
+.free-cta .cta-text {
+    color: #000000 !important;
+}
+
+/* Fix for invisible text on the "Services" page */
+.service-card p,
+.service-card h4,
+.service-price .price-amount,
+.service-price .price-label,
+.page-title,
+.page-description,
+.category-title h3,
+.services-cta h2,
+.services-cta p {
+    color: #000000 !important;
+}
+
+.service-features li {
+    color: #000000 !important;
+}
+
+.category-header i,
+.category-features i {
+    color: #000000 !important;
+}
