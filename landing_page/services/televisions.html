@@ -4,23 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart TVs - Vitron, Syinix, Samsung | Tech Solutions</title>
-    <link rel="stylesheet" href="services-pages.css">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .product-card {
+            background: white;
+            border: 2px solid #000;
+            padding: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 8px 8px 0 #000;
+        }
+        .product-image {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+            border: 1px solid #000;
+            margin-bottom: 1rem;
+            background: #f5f5f5;
+        }
+        .product-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #000;
+        }
+        .product-brand {
+            display: inline-block;
+            background: #000;
+            color: #fff;
+            padding: 0.3rem 0.8rem;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        .page-header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 3px solid #000;
+            margin-bottom: 3rem;
+        }
+        .page-header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .page-header p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+        .brand-section {
+            margin: 4rem 0;
+        }
+        .brand-header {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid #000;
+        }
+        .btn-view {
+            background: #000;
+            color: #fff;
+            padding: 1rem 2rem;
+            border: none;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+        }
+        .btn-view:hover {
+            background: #333;
+            transform: scale(1.05);
+        }
+    </style>
+    <link rel="stylesheet" href="../black-and-white.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="../index.html">Tech Solutions</a>
-            </div>
-            <div class="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../services.html">All Services</a>
-                <a href="#contact">Contact</a>
+    <nav style="background: #000; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000;">
+        <div style="display: flex; justify-content: space-between; align-items: center; max-width: 1400px; margin: 0 auto;">
+            <a href="../index.html" style="color: #fff; text-decoration: none; font-size: 1.5rem; font-weight: bold;">Tech Solutions</a>
+            <div style="display: flex; gap: 2rem;">
+                <a href="../index.html" style="color: #fff; text-decoration: none;">Home</a>
+                <a href="../services.html" style="color: #fff; text-decoration: none;">All Services</a>
+                <a href="#contact" style="color: #fff; text-decoration: none;">Contact</a>
             </div>
         </div>
     </nav>
 
-    <div class="main-content">
+    <div style="max-width: 1400px; margin: 0 auto; padding: 2rem;">
         <div class="page-header">
             <h1>Premium Smart Televisions</h1>
             <p>Discover the Perfect TV for Your Home - Vitron, Syinix & Samsung</p>
@@ -34,65 +116,19 @@
                     <span class="product-brand">VITRON</span>
                     <img src="../images/vitron_tv_1.jpg" alt="Vitron 43 inch Smart TV" class="product-image">
                     <h3 class="product-title">Vitron HTC4388FS - 43" Smart Android TV</h3>
-                    <p class="product-price">$196.14 USD</p>
-                    <p class="product-description">
-                        Experience premium entertainment with the Vitron 43-inch Smart Android TV. This frameless design features Bluetooth connectivity, built-in WiFi, and access to all your favorite streaming apps. Perfect for medium-sized rooms and family entertainment.
-                    </p>
-                    <ul class="product-features">
-                        <li>43" Full HD Frameless Display</li>
-                        <li>Android 11.0 Smart TV</li>
-                        <li>Bluetooth Enabled</li>
-                        <li>Built-in WiFi Connectivity</li>
-                        <li>Netflix, YouTube, App Store</li>
-                        <li>Inbuilt Decoder for Local Channels</li>
-                        <li>Multiple HDMI & USB Ports</li>
-                        <li>1 Year Warranty</li>
-                        <li>Free Wall Bracket & TV Guard</li>
-                    </ul>
-                    <button class="btn-order" onclick="alert('Contact us to place your order!')">Order Now</button>
+                    <a href="televisions/vitron-htc4388fs.html" class="btn-view">View Details</a>
                 </div>
-
                 <div class="product-card">
                     <span class="product-brand">VITRON</span>
                     <img src="../images/vitron_tv_2.jpg" alt="Vitron 32 inch Smart TV" class="product-image">
                     <h3 class="product-title">Vitron HTC3200S - 32" Smart Android TV</h3>
-                    <p class="product-price">$123.07 USD</p>
-                    <p class="product-description">
-                        The perfect compact smart TV for bedrooms, kitchens, or smaller spaces. The Vitron 32-inch model delivers exceptional picture quality and smart features in a space-saving design. Enjoy all the benefits of a smart TV without compromising on quality.
-                    </p>
-                    <ul class="product-features">
-                        <li>32" HD Frameless LED Display</li>
-                        <li>Android Smart TV Platform</li>
-                        <li>Bluetooth Audio Streaming</li>
-                        <li>WiFi Built-in</li>
-                        <li>Netflix, YouTube Pre-installed</li>
-                        <li>Digital TV Decoder Included</li>
-                        <li>Screen Mirroring Support</li>
-                        <li>Energy Efficient</li>
-                        <li>Includes Free Accessories</li>
-                    </ul>
-                    <button class="btn-order" onclick="alert('Contact us to place your order!')">Order Now</button>
+                    <a href="televisions/vitron-htc3200s.html" class="btn-view">View Details</a>
                 </div>
-
                 <div class="product-card">
                     <span class="product-brand">VITRON</span>
                     <img src="../images/vitron_tv_3.jpg" alt="Vitron 32 inch Digital TV" class="product-image">
                     <h3 class="product-title">Vitron HTC3218F - 32" HD Digital TV</h3>
-                    <p class="product-price">$112.85 USD</p>
-                    <p class="product-description">
-                        An affordable entry-level option that doesn't compromise on quality. The Vitron 32-inch Digital TV offers crisp HD picture quality with a built-in decoder for local channels. Ideal for those seeking reliable performance at an excellent price point.
-                    </p>
-                    <ul class="product-features">
-                        <li>32" HD LED Display</li>
-                        <li>Frameless Modern Design</li>
-                        <li>Digital TV with Inbuilt Decoder</li>
-                        <li>Multiple HDMI Inputs</li>
-                        <li>USB Media Player</li>
-                        <li>VGA Port for PC Connection</li>
-                        <li>Low Power Consumption</li>
-                        <li>1 Year Manufacturer Warranty</li>
-                    </ul>
-                    <button class="btn-order" onclick="alert('Contact us to place your order!')">Order Now</button>
+                    <a href="televisions/vitron-htc3218f.html" class="btn-view">View Details</a>
                 </div>
             </div>
         </div>
@@ -105,66 +141,19 @@
                     <span class="product-brand">SYINIX</span>
                     <img src="../images/syinix_tv_1.png" alt="Syinix 50 inch 4K Google TV" class="product-image">
                     <h3 class="product-title">Syinix 50" 4K UHD Google TV</h3>
-                    <p class="product-price">$380.77 USD</p>
-                    <p class="product-description">
-                        Elevate your viewing experience with the Syinix 50-inch 4K Google TV. Featuring cutting-edge Google TV platform, this television offers personalized recommendations, voice control, and seamless integration with your smart home devices. The frameless design and 4K resolution deliver stunning visuals.
-                    </p>
-                    <ul class="product-features">
-                        <li>50" 4K UHD Frameless Display</li>
-                        <li>Google TV Operating System</li>
-                        <li>Built-in Chromecast</li>
-                        <li>Google Assistant Voice Control</li>
-                        <li>Dolby Audio Technology</li>
-                        <li>HDR10 Support</li>
-                        <li>WiFi 6 Connectivity</li>
-                        <li>Bluetooth 5.0</li>
-                        <li>Multiple HDMI 2.1 Ports</li>
-                        <li>2 Year Warranty</li>
-                    </ul>
-                    <button class="btn-order" onclick="alert('Contact us to place your order!')">Order Now</button>
+                    <a href="televisions/syinix-50-4k-uhd.html" class="btn-view">View Details</a>
                 </div>
-
                 <div class="product-card">
                     <span class="product-brand">SYINIX</span>
                     <img src="../images/syinix_tv_2.jpg" alt="Syinix 43 inch Smart TV" class="product-image">
                     <h3 class="product-title">Syinix S65 43" Smart TV</h3>
-                    <p class="product-price">$215.38 USD</p>
-                    <p class="product-description">
-                        The Syinix S65 43-inch Smart TV combines smooth performance with stable connectivity. Designed for your first smart TV experience, it offers i-Cast screen mirroring, enhanced color technology, and a user-friendly interface that makes streaming effortless.
-                    </p>
-                    <ul class="product-features">
-                        <li>43" Full HD Smart Display</li>
-                        <li>Smooth & Stable Performance</li>
-                        <li>i-Cast Screen Mirroring</li>
-                        <li>Enhanced Color Technology</li>
-                        <li>Built-in WiFi</li>
-                        <li>Netflix, YouTube, Prime Video</li>
-                        <li>USB Recording Function</li>
-                        <li>Parental Control Features</li>
-                        <li>Energy Star Certified</li>
-                    </ul>
-                    <button class="btn-order" onclick="alert('Contact us to place your order!')">Order Now</button>
+                    <a href="televisions/syinix-s65-43.html" class="btn-view">View Details</a>
                 </div>
-
                 <div class="product-card">
                     <span class="product-brand">SYINIX</span>
                     <img src="../images/syinix_tv_2.jpg" alt="Syinix 32 inch LED TV" class="product-image">
                     <h3 class="product-title">Syinix 32E62M - 32" LED Digital TV</h3>
-                    <p class="product-price">$126.92 USD</p>
-                    <p class="product-description">
-                        Compact yet powerful, the Syinix 32-inch LED Digital TV is perfect for bedrooms, dorm rooms, or as a secondary TV. With its frameless design and digital decoder, you get excellent value and reliable performance in a sleek package.
-                    </p>
-                    <ul class="product-features">
-                        <li>32" HD LED Frameless Display</li>
-                        <li>Digital TV with Decoder</li>
-                        <li>Slim Profile Design</li>
-                        <li>HDMI & USB Connectivity</li>
-                        <li>PC Input Support</li>
-                        <li>Auto Channel Search</li>
-                        <li>Sleep Timer Function</li>
-                        <li>Low Energy Consumption</li>
-                    </ul>
-                    <button class="btn-order" onclick="alert('Contact us to place your order!')">Order Now</button>
+                    <a href="televisions/syinix-32e62m.html" class="btn-view">View Details</a>
                 </div>
             </div>
         </div>
@@ -177,99 +166,27 @@
                     <span class="product-brand">SAMSUNG</span>
                     <img src="../images/samsung_tv_1.jpg" alt="Samsung 55 inch Crystal UHD TV" class="product-image">
                     <h3 class="product-title">Samsung 55CU8000 - 55" Crystal UHD 4K</h3>
-                    <p class="product-price">$692.14 USD</p>
-                    <p class="product-description">
-                        Experience breathtaking clarity with Samsung's Crystal UHD technology. The 55-inch display delivers a billion shades of color, while the Crystal Processor 4K upscales all your content to near-4K quality. Smart TV features powered by Tizen OS provide seamless access to all your favorite streaming services.
-                    </p>
-                    <ul class="product-features">
-                        <li>55" Crystal UHD 4K Display</li>
-                        <li>Crystal Processor 4K</li>
-                        <li>PurColor Technology</li>
-                        <li>HDR (High Dynamic Range)</li>
-                        <li>Tizen Smart TV Platform</li>
-                        <li>Motion Xcelerator</li>
-                        <li>Object Tracking Sound Lite</li>
-                        <li>Q-Symphony Audio</li>
-                        <li>Multiple Voice Assistants</li>
-                        <li>Gaming Hub Built-in</li>
-                        <li>2 Year Warranty</li>
-                    </ul>
-                    <button class="btn-order" onclick="alert('Contact us to place your order!')">Order Now</button>
+                    <a href="televisions/samsung-55cu8000.html" class="btn-view">View Details</a>
                 </div>
-
                 <div class="product-card">
                     <span class="product-brand">SAMSUNG</span>
                     <img src="../images/samsung_tv_2.jpg" alt="Samsung 32 inch Smart TV" class="product-image">
                     <h3 class="product-title">Samsung UA32T5300AU - 32" Smart TV</h3>
-                    <p class="product-price">$298.99 USD</p>
-                    <p class="product-description">
-                        The Samsung 32-inch Smart TV brings premium features to a compact size. Perfect for smaller spaces, this TV features HDR support, Purcolor technology, and Samsung's intuitive Smart Hub. Enjoy your favorite content with exceptional picture quality and smart functionality.
-                    </p>
-                    <ul class="product-features">
-                        <li>32" Full HD Display</li>
-                        <li>HDR Support</li>
-                        <li>PurColor Technology</li>
-                        <li>Samsung Smart Hub</li>
-                        <li>Universal Guide</li>
-                        <li>Screen Mirroring</li>
-                        <li>ConnectShare (USB)</li>
-                        <li>Eco Sensor</li>
-                        <li>Bluetooth Audio</li>
-                        <li>1 Year Warranty</li>
-                    </ul>
-                    <button class="btn-order" onclick="alert('Contact us to place your order!')">Order Now</button>
+                    <a href="televisions/samsung-ua32t5300au.html" class="btn-view">View Details</a>
                 </div>
-
                 <div class="product-card">
                     <span class="product-brand">SAMSUNG</span>
                     <img src="../images/samsung_tv_3.jpg" alt="Samsung 43 inch Smart TV" class="product-image">
                     <h3 class="product-title">Samsung 43F6000FU - 43" Smart Full HD</h3>
-                    <p class="product-price">$438.37 USD</p>
-                    <p class="product-description">
-                        The Samsung 43-inch Smart TV offers the perfect balance of size and performance. With Full HD resolution, Smart TV capabilities, and Samsung's renowned picture quality, this television transforms your living room into an entertainment center. Ideal for families and movie enthusiasts.
-                    </p>
-                    <ul class="product-features">
-                        <li>43" Full HD LED Display</li>
-                        <li>Smart TV with Tizen OS</li>
-                        <li>PurColor for Vibrant Images</li>
-                        <li>Contrast Enhancer</li>
-                        <li>Micro Dimming Pro</li>
-                        <li>Dolby Digital Plus Audio</li>
-                        <li>Smart Hub Interface</li>
-                        <li>Multiple HDMI & USB Ports</li>
-                        <li>WiFi & Ethernet Connectivity</li>
-                        <li>Extended Warranty Available</li>
-                    </ul>
-                    <button class="btn-order" onclick="alert('Contact us to place your order!')">Order Now</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="info-section">
-            <h2>Why Buy Your TV From Us?</h2>
-            <div class="info-grid">
-                <div class="info-item">
-                    <h3>Authentic Products</h3>
-                    <p>All TVs are 100% genuine with official warranties from authorized distributors.</p>
-                </div>
-                <div class="info-item">
-                    <h3>Free Delivery</h3>
-                    <p>We offer free delivery and installation within the service area.</p>
-                </div>
-                <div class="info-item">
-                    <h3>Professional Setup</h3>
-                    <p>Our technicians will install and configure your TV for optimal performance.</p>
-                </div>
-                <div class="info-item">
-                    <h3>Best Prices</h3>
-                    <p>Competitive pricing with flexible payment options available.</p>
+                    <a href="televisions/samsung-43f6000fu.html" class="btn-view">View Details</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <footer class="footer">
+    <footer style="background: #000; color: #fff; padding: 2rem; text-align: center; margin-top: 3rem;">
         <p>&copy; 2024 Tech Solutions. All rights reserved.</p>
     </footer>
+    <script src="../currency.js"></script>
 </body>
 </html>

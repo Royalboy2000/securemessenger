@@ -1,0 +1,123 @@
+/* General Body Styles */
+body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* All text elements */
+h1, h2, h3, h4, h5, h6, p, a, li, span, div {
+    color: #000000 !important;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #000000 !important;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline !important;
+}
+
+/* Navigation */
+.navbar {
+    background: #ffffff !important;
+    border-bottom: 2px solid #000000 !important;
+}
+
+.nav-logo a, .nav-links a {
+    color: #000000 !important;
+}
+
+/* Page Headers */
+.page-header {
+    background: #ffffff !important;
+    border-bottom: 2px solid #000000 !important;
+    padding: 2rem 1rem;
+}
+
+/* Product Cards */
+.product-card {
+    background: #ffffff !important;
+    border: 2px solid #000000 !important;
+    padding: 1.5rem;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 8px 8px 0 #000000 !important;
+}
+
+.product-brand {
+    background: #000000 !important;
+    color: #ffffff !important;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.product-image {
+    border: 2px solid #000000 !important;
+    background: #f5f5f5;
+}
+
+.product-price {
+    font-weight: bold;
+}
+
+/* Buttons */
+.btn-order, .btn-view {
+    background: #000000 !important;
+    color: #ffffff !important;
+    padding: 1rem 2rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+.btn-order:hover, .btn-view:hover {
+    background: #333333 !important;
+}
+
+/* Footer */
+.footer {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-top: 2px solid #000000 !important;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* Remove gradients and shadows */
+.gradient-text, .typing-text .letter {
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    background-clip: unset !important;
+    text-shadow: none !important;
+    color: #000000 !important;
+}
+
+/* Remove colored icons */
+.service-icon i, .category-title i, .footer-logo i {
+    color: #000000 !important;
+}
+
+.service-icon {
+    background: #ffffff !important;
+    border: 1px solid #000;
+}
