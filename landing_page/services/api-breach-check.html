@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Breach Checking Service | Tech Solutions</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, #000 0%, #333 100%);
+            color: #fff;
+            padding: 4rem 2rem;
+            text-align: center;
+            border: 3px solid #000;
+            margin-bottom: 3rem;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-section p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .service-card {
+            background: white;
+            border: 2px solid #000;
+            padding: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 8px 8px 0 #000;
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: #000;
+        }
+
+        .service-description {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .pricing-section {
+            background: #f5f5f5;
+            padding: 3rem 2rem;
+            border: 3px solid #000;
+            margin: 3rem 0;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .pricing-card {
+            background: white;
+            border: 2px solid #000;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .pricing-card.featured {
+            background: #000;
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        .pricing-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .pricing-price {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+
+        .pricing-features {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+            text-align: left;
+        }
+
+        .pricing-features li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .pricing-card.featured .pricing-features li {
+            border-bottom-color: #333;
+        }
+
+        .pricing-features li:before {
+            content: "✓ ";
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        .btn-order {
+            background: #000;
+            color: #fff;
+            padding: 1rem 2rem;
+            border: none;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card.featured .btn-order {
+            background: #fff;
+            color: #000;
+        }
+
+        .btn-order:hover {
+            transform: scale(1.05);
+        }
+
+        .features-section {
+            margin: 4rem 0;
+        }
+
+        .feature-item {
+            display: flex;
+            gap: 2rem;
+            margin: 2rem 0;
+            padding: 2rem;
+            border: 2px solid #000;
+            background: white;
+        }
+
+        .feature-item:nth-child(even) {
+            flex-direction: row-reverse;
+            background: #f5f5f5;
+        }
+
+        .feature-content {
+            flex: 1;
+        }
+
+        .feature-content h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-content p {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .stats-section {
+            background: #000;
+            color: #fff;
+            padding: 3rem 2rem;
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .stat-item h3 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-item p {
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav style="background: #000; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000;">
+        <div style="display: flex; justify-content: space-between; align-items: center; max-width: 1400px; margin: 0 auto;">
+            <a href="../index.html" style="color: #fff; text-decoration: none; font-size: 1.5rem; font-weight: bold;">Tech Solutions</a>
+            <div style="display: flex; gap: 2rem;">
+                <a href="../index.html" style="color: #fff; text-decoration: none;">Home</a>
+                <a href="../services.html" style="color: #fff; text-decoration: none;">All Services</a>
+                <a href="#contact" style="color: #fff; text-decoration: none;">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div style="max-width: 1400px; margin: 0 auto; padding: 2rem;">
+        <div class="hero-section">
+            <h1>🔒 API Breach Checking Service</h1>
+            <p>Protect your digital assets with our comprehensive API security monitoring and breach detection service. Stay ahead of threats with real-time alerts and professional security analysis.</p>
+        </div>
+
+        <div class="service-grid">
+            <div class="service-card">
+                <div class="service-icon">🛡️</div>
+                <h3 class="service-title">Real-Time Monitoring</h3>
+                <p class="service-description">
+                    Our advanced monitoring system continuously scans your APIs for potential breaches, unauthorized access attempts, and suspicious activities. Get instant alerts when anomalies are detected, allowing you to respond immediately to security threats.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🔍</div>
+                <h3 class="service-title">Comprehensive Scanning</h3>
+                <p class="service-description">
+                    We perform deep analysis of your API endpoints, checking for vulnerabilities, exposed credentials, data leaks, and compliance issues. Our scanning covers authentication flaws, injection attacks, and configuration errors.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">📊</div>
+                <h3 class="service-title">Detailed Reports</h3>
+                <p class="service-description">
+                    Receive comprehensive security reports with actionable insights. Our reports include vulnerability classifications, risk assessments, remediation recommendations, and compliance status updates.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">⚡</div>
+                <h3 class="service-title">Instant Alerts</h3>
+                <p class="service-description">
+                    Get notified immediately via email, SMS, or webhook when a breach is detected. Configure custom alert rules based on severity levels and specific threat types to ensure your team responds quickly.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🔐</div>
+                <h3 class="service-title">Credential Monitoring</h3>
+                <p class="service-description">
+                    We monitor dark web databases, paste sites, and breach repositories to check if your API credentials have been compromised. Receive alerts if your keys, tokens, or secrets are found in public breaches.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">📈</div>
+                <h3 class="service-title">Compliance Tracking</h3>
+                <p class="service-description">
+                    Ensure your APIs meet industry standards and regulatory requirements including GDPR, HIPAA, PCI-DSS, and SOC 2. Our service provides compliance scorecards and audit-ready documentation.
+                </p>
+            </div>
+        </div>
+
+        <div class="stats-section">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Trusted by Organizations Worldwide</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>10,000+</h3>
+                    <p>APIs Monitored</p>
+                </div>
+                <div class="stat-item">
+                    <h3>99.9%</h3>
+                    <p>Uptime Guarantee</p>
+                </div>
+                <div class="stat-item">
+                    <h3>< 60s</h3>
+                    <p>Average Alert Time</p>
+                </div>
+                <div class="stat-item">
+                    <h3>24/7</h3>
+                    <p>Security Monitoring</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="features-section">
+            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 2rem;">How Our Service Works</h2>
+
+            <div class="feature-item">
+                <div class="feature-content">
+                    <h3>1. Integration & Setup</h3>
+                    <p>
+                        Getting started is simple. Provide your API endpoints and authentication details through our secure portal. Our system supports REST, GraphQL, SOAP, and WebSocket APIs. We'll configure monitoring rules tailored to your specific security requirements and compliance needs.
+                    </p>
+                </div>
+                <div style="flex: 1; display: flex; align-items: center; justify-content: center; font-size: 5rem;">
+                    🔗
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-content">
+                    <h3>2. Continuous Monitoring</h3>
+                    <p>
+                        Our platform continuously monitors your APIs 24/7, checking for unauthorized access, unusual traffic patterns, data exfiltration attempts, and known vulnerability signatures. Machine learning algorithms detect anomalies and zero-day threats that traditional security tools might miss.
+                    </p>
+                </div>
+                <div style="flex: 1; display: flex; align-items: center; justify-content: center; font-size: 5rem;">
+                    👁️
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-content">
+                    <h3>3. Threat Detection & Analysis</h3>
+                    <p>
+                        When suspicious activity is detected, our security experts analyze the threat to determine its severity and potential impact. We correlate data from multiple sources including threat intelligence feeds, breach databases, and security research to provide accurate assessments.
+                    </p>
+                </div>
+                <div style="flex: 1; display: flex; align-items: center; justify-content: center; font-size: 5rem;">
+                    🎯
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-content">
+                    <h3>4. Instant Notification & Response</h3>
+                    <p>
+                        Receive immediate alerts through your preferred channels with detailed information about the threat, affected endpoints, and recommended actions. Our incident response team is available to assist with breach containment and remediation guidance.
+                    </p>
+                </div>
+                <div style="flex: 1; display: flex; align-items: center; justify-content: center; font-size: 5rem;">
+                    🚨
+                </div>
+            </div>
+        </div>
+
+        <div class="pricing-section">
+            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 1rem;">Choose Your Protection Plan</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 2rem;">All plans include 24/7 monitoring and instant breach alerts</p>
+
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3 class="pricing-title">Starter</h3>
+                    <div class="pricing-price">$49<span style="font-size: 1rem;">/month</span></div>
+                    <ul class="pricing-features">
+                        <li>Up to 5 API Endpoints</li>
+                        <li>Daily Security Scans</li>
+                        <li>Email Alerts</li>
+                        <li>Basic Reporting</li>
+                        <li>Credential Monitoring</li>
+                        <li>Community Support</li>
+                    </ul>
+                    <button class="btn-order" onclick="alert('Contact us to subscribe!')">Get Started</button>
+                </div>
+
+                <div class="pricing-card featured">
+                    <h3 class="pricing-title">Professional</h3>
+                    <div class="pricing-price">$149<span style="font-size: 1rem;">/month</span></div>
+                    <ul class="pricing-features">
+                        <li>Up to 25 API Endpoints</li>
+                        <li>Real-Time Monitoring</li>
+                        <li>Email, SMS & Webhook Alerts</li>
+                        <li>Advanced Analytics</li>
+                        <li>Compliance Reports</li>
+                        <li>Dark Web Monitoring</li>
+                        <li>Priority Support</li>
+                        <li>Custom Alert Rules</li>
+                    </ul>
+                    <button class="btn-order" onclick="alert('Contact us to subscribe!')">Most Popular</button>
+                </div>
+
+                <div class="pricing-card">
+                    <h3 class="pricing-title">Enterprise</h3>
+                    <div class="pricing-price">$499<span style="font-size: 1rem;">/month</span></div>
+                    <ul class="pricing-features">
+                        <li>Unlimited API Endpoints</li>
+                        <li>Real-Time Monitoring</li>
+                        <li>Multi-Channel Alerts</li>
+                        <li>White-Label Reports</li>
+                        <li>Compliance Automation</li>
+                        <li>Dedicated Security Analyst</li>
+                        <li>24/7 Phone Support</li>
+                        <li>Custom Integrations</li>
+                        <li>SLA Guarantee</li>
+                    </ul>
+                    <button class="btn-order" onclick="alert('Contact us to subscribe!')">Contact Sales</button>
+                </div>
+            </div>
+        </div>
+
+        <div style="background: #f5f5f5; padding: 2rem; border: 2px solid #000; margin: 3rem 0;">
+            <h2 style="text-align: center; margin-bottom: 1.5rem;">Why Choose Our API Breach Checking Service?</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                <div>
+                    <h3>🎓 Expert Team</h3>
+                    <p>Our security analysts have decades of combined experience in API security, penetration testing, and incident response.</p>
+                </div>
+                <div>
+                    <h3>🔬 Advanced Technology</h3>
+                    <p>We use cutting-edge machine learning and AI to detect threats that traditional security tools miss.</p>
+                </div>
+                <div>
+                    <h3>⚖️ Compliance Ready</h3>
+                    <p>Stay compliant with GDPR, HIPAA, PCI-DSS, SOC 2, and other regulatory frameworks.</p>
+                </div>
+                <div>
+                    <h3>💼 Enterprise Grade</h3>
+                    <p>Trusted by Fortune 500 companies and startups alike for protecting their critical API infrastructure.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer style="background: #000; color: #fff; padding: 2rem; text-align: center; margin-top: 3rem;">
+        <p>&copy; 2024 Tech Solutions. All rights reserved.</p>
+    </footer>
+</body>
+</html>

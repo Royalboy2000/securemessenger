@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Pixel Phones | Tech Solutions</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .product-card {
+            background: white;
+            border: 2px solid #000;
+            padding: 0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 8px 8px 0 #000;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 280px;
+            object-fit: contain;
+            border-bottom: 2px solid #000;
+            background: #f5f5f5;
+            padding: 1.5rem;
+        }
+
+        .product-card-content {
+            padding: 1.5rem;
+        }
+
+        .product-badge {
+            display: inline-block;
+            background: #000;
+            color: #fff;
+            padding: 0.3rem 0.8rem;
+            font-size: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .product-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #000;
+        }
+
+        .product-price {
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: #000;
+            margin: 1rem 0;
+        }
+
+        .product-excerpt {
+            line-height: 1.6;
+            color: #666;
+            margin: 1rem 0;
+            font-size: 0.95rem;
+        }
+
+        .btn-view {
+            background: #000;
+            color: #fff;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-view:hover {
+            background: #333;
+        }
+
+        .page-header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 3px solid #000;
+            margin-bottom: 3rem;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .page-header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .page-header p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        .info-section {
+            background: #f5f5f5;
+            padding: 2rem;
+            border: 2px solid #000;
+            margin: 3rem auto;
+            max-width: 1200px;
+        }
+
+        .info-section h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <nav style="background: #000; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000;">
+        <div style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto;">
+            <a href="../index.html" style="color: #fff; text-decoration: none; font-size: 1.5rem; font-weight: bold;">Tech Solutions</a>
+            <div style="display: flex; gap: 2rem;">
+                <a href="../index.html" style="color: #fff; text-decoration: none;">Home</a>
+                <a href="../services.html" style="color: #fff; text-decoration: none;">All Services</a>
+                <a href="#contact" style="color: #fff; text-decoration: none;">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div style="max-width: 1400px; margin: 0 auto; padding: 2rem;">
+        <div class="page-header">
+            <h1>Google Pixel Smartphones</h1>
+            <p>Experience Pure Android with Google's AI-Powered Photography</p>
+        </div>
+
+        <div class="product-grid">
+            <a href="products/phones/pixel-7-pro.html" class="product-card">
+                <img src="../images/google_pixel_3.jpg" alt="Google Pixel 7 Pro" class="product-image">
+                <div class="product-card-content">
+                    <span class="product-badge">GOOGLE PIXEL</span>
+                    <h3 class="product-title">Google Pixel 7 Pro</h3>
+                    <p class="product-price">$807.69 USD</p>
+                    <p class="product-excerpt">
+                        Flagship features at incredible value. 6.7" QHD+ display, triple camera with 5x optical zoom, and Tensor G2 chip for power users.
+                    </p>
+                    <button class="btn-view">View Details →</button>
+                </div>
+            </a>
+
+            <a href="products/phones/pixel-8.html" class="product-card">
+                <img src="../images/google_pixel_1.jpg" alt="Google Pixel 8" class="product-image">
+                <div class="product-card-content">
+                    <span class="product-badge">GOOGLE PIXEL</span>
+                    <h3 class="product-title">Google Pixel 8</h3>
+                    <p class="product-price">$1,096.15 USD</p>
+                    <p class="product-excerpt">
+                        The pinnacle of smartphone photography. Tensor G3 chip, 6.2" Actua display, Magic Eraser, and 7 years of guaranteed updates.
+                    </p>
+                    <button class="btn-view">View Details →</button>
+                </div>
+            </a>
+
+            <a href="products/phones/pixel-9.html" class="product-card">
+                <img src="../images/google_pixel_2.jpg" alt="Google Pixel 9" class="product-image">
+                <div class="product-card-content">
+                    <span class="product-badge">GOOGLE PIXEL - LATEST</span>
+                    <h3 class="product-title">Google Pixel 9</h3>
+                    <p class="product-price">$1,250.00 USD</p>
+                    <p class="product-excerpt">
+                        Latest flagship with Tensor G4 chip, revolutionary AI camera, Gemini AI Assistant built-in, and cutting-edge features.
+                    </p>
+                    <button class="btn-view">View Details →</button>
+                </div>
+            </a>
+        </div>
+
+        <div class="info-section">
+            <h2>Why Choose Google Pixel?</h2>
+            <div class="info-grid">
+                <div>
+                    <h3>📸 Best-in-Class Camera</h3>
+                    <p>Google Pixel phones are renowned for having the best smartphone cameras, powered by advanced computational photography and AI.</p>
+                </div>
+                <div>
+                    <h3>🤖 Pure Android Experience</h3>
+                    <p>Get the latest Android updates first, directly from Google, with a clean, bloatware-free interface.</p>
+                </div>
+                <div>
+                    <h3>🧠 AI-Powered Features</h3>
+                    <p>Exclusive Google AI features like Magic Eraser, Call Screen, Live Translate, and more make your life easier.</p>
+                </div>
+                <div>
+                    <h3>🔒 Top-Tier Security</h3>
+                    <p>Titan M2 security chip and guaranteed updates for up to 7 years keep your data safe and your phone current.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer style="background: #000; color: #fff; padding: 2rem; text-align: center; margin-top: 3rem;">
+        <p>&copy; 2024 Tech Solutions. All rights reserved.</p>
+    </footer>
+</body>
+</html>
