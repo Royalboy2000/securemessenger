@@ -4,15 +4,20 @@ def run(playwright):
     browser = playwright.chromium.launch(headless=True)
     page = browser.new_page()
 
-    # Navigate to a product page. The server is running in the 'landing_page' directory.
+    # Navigate to a product page
     page.goto("http://localhost:8000/services/products/android-boxes/mxq-pro-basic.html")
 
-    # Wait for the product details section to ensure the page has loaded
-    product_details = page.locator(".product-details")
-    expect(product_details).to_be_visible()
+    # Locate the product details section
+    product_details_section = page.locator(".product-details")
 
-    # Take a screenshot to verify the text is now visible
-    page.screenshot(path="jules-scratch/verification/verification.png")
+    # Scroll down to the product details section to make it visible
+    product_details_section.scroll_into_view_if_needed()
+
+    # Wait for the "Product Description" h2 to be visible
+    expect(product_details_section.locator("h2", has_text="Product Description")).to_be_visible()
+
+    # Take a screenshot of the product details section
+    product_details_section.screenshot(path="jules-scratch/verification/verification.png")
 
     browser.close()
 
